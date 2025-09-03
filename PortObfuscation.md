@@ -22,6 +22,17 @@ sudo nano /etc/ssh/sshd_config
 sudo systemctl restart ssh
 ```
 
-4. **Check current listening ports (on 22 and 2222 specifically)**
+4. **Check current listening ports** *on 22 and 2222 specifically*
 ```bash
 sudo ss -tuln -p | grep 2222
+sudo ss -tuln -p | grep 22
+```
+
+5. **Confirm updated port status**
+```bash
+sudo nmap -sS -p 22,2222 127.0.0.1
+```
+
+*Port 22 successfully obfuscated*
+
+## Port 80
