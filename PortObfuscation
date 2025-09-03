@@ -1,7 +1,0 @@
-# Port obfuscation Lab for port 22 and port 80
-## OBJECTIVE: to obfuscate default ports to harden system and make it less predictable for guessing exploitable services.
-## Port 22:
-
-# 1. *using Kali VM, identify the current network address.*
-``` bash
-
