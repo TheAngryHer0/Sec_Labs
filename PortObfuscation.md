@@ -32,7 +32,36 @@ sudo ss -tuln -p | grep 22
 ```bash
 sudo nmap -sS -p 22,2222 127.0.0.1
 ```
-
 *Port 22 successfully obfuscated*
 
 ## Port 80
+
+1. **Finding port 80 process**
+```bash
+ss -tuln -p | grep 80
+```
+
+2. **Configure apache2 settings for Port 80**
+```bash
+sudo nano /etc/apache2/ports.conf
+```
+*edit #Listen 80 -> Listen 8080*
+
+3. **Configure apache2 agvailable sites**
+```bash
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+*edit VirtualHost :80 to :8080*
+
+4. **restart apache2**
+```bash
+sudo systemctl restart apache2
+```
+
+5. **check apache2 status on inbound port 8080 traffic**
+```bash
+curl localhost:8080
+```
+*shows the line  <title>Apache2 Debian Default Page: It works</title>*
+
+*Port 80 succcessfully obfuscated to Port 8080*
