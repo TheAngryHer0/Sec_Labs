@@ -34,7 +34,7 @@ sudo nmap -sS -p 22,2222 127.0.0.1
 ```
 *Port 22 successfully obfuscated*
 
-## Port 80
+## Port 80:
 
 1. **Finding port 80 process**
 ```bash
@@ -64,4 +64,8 @@ curl localhost:8080
 ```
 *shows the line  <title>Apache2 Debian Default Page: It works</title>*
 
-*Port 80 succcessfully obfuscated to Port 8080*
+6. **Confirm updated port status**
+```bash
+sudo nmap -p 80,8080 127.0.0.1
+```
+*Port 80 succcessfully obfuscated*
