@@ -13,22 +13,34 @@ ip a
 sudo nmap -sS -p- 127.0.0.1
 ```
 
-3. **identified ssh, now to change listening port**
+3. **configure ssh listening port**
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
-**restarting ssh to confirm validitiy**
+
+4. **configure ssh connection port**
+```bash
+sudo -p 2222 julam@localhost
+```
+
+5. **restarting ssh to confirm validitiy**
 ```bash
 sudo systemctl restart ssh
 ```
 
-4. **Check current listening ports** *on 22 and 2222 specifically*
+6. **Add firewall rule**
+```bash
+sudo ufw allow 2222/tcp
+```
+
+7. **Check current listening ports** *on 22 and 2222 specifically*
 ```bash
 sudo ss -tuln -p | grep 2222
 sudo ss -tuln -p | grep 22
 ```
+*both outputs the same*
 
-5. **Confirm updated port status**
+8. **Confirm updated port status**
 ```bash
 sudo nmap -sS -p 22,2222 127.0.0.1
 ```
@@ -58,13 +70,25 @@ sudo nano /etc/apache2/sites-available/000-default.conf
 sudo systemctl restart apache2
 ```
 
-5. **check apache2 status on inbound port 8080 traffic**
+5. **add firewall rule**
+```bash
+sudo ufw allow 8080/tcp
+```
+
+6. **check apache2 status on inbound port 8080 traffic**
 ```bash
 curl localhost:8080
 ```
 *shows the line  <title>Apache2 Debian Default Page: It works</title>*
 
-6. **Confirm updated port status**
+7. **Check current listening ports** *on 80 and 8080 specifically*
+```bash
+sudo ss -tuln -p | grep 8080
+sudo ss -tuln -p | grep 80
+```
+*both outputs the same*
+
+8. **Confirm updated port status**
 ```bash
 sudo nmap -p 80,8080 127.0.0.1
 ```
