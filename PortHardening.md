@@ -12,18 +12,20 @@ nmap -sS 192.168.68.59
 ```cmd
 nmap -sS -p- 127.0.0.1
 ```
-![image1](../images/1.Port Hardening Lab/1.port 445 lab.png)
+![Finding network address](../images/1_PortHardeningLab/1_Lab1.png)
 
 ## Anomaly: Port still open after stopping in services.
 1. **Lookup port status**
 ```cmd admin
 netstat -ano | findstr :445
 ```
+![Lookup all PID](../images/1_PortHardeningLab/2_Lab1.png)
+
 2. **check SMB protocol features**
 ```Powershell admin
 Get-SmbServerConfiguration
 ```
-![image2](../images/1.Port Hardening Lab/3.port 445 lab.png)
+![Check SMB protocol](..images/1_PortHardeningLab/3_Lab1.png)
 
 3. **Disable SMB1 server protocol and disable server SMB2 config**
 ```Powershell admin
@@ -32,6 +34,8 @@ Disable-WindowsOptionFeature -online -FeatureNameSMB1Protocol
 ```Powershell admin
 Set-SmbServerConfiguration-EnableSMB2Protocol $False
 ```
+![Configure SMB settings](../images/1_PortHardeningLab/4_Lab1.png)
+
 4. **Set firewall rule to block inbound TCP traffic at port 445**
 ```cmd admin
 netsh advfirewall firewall add rule name="Block SMB 445" dir=in action=block protocol=TCP localport=445
@@ -44,5 +48,6 @@ Get-SMBserverconfiguration
 ```cmd
 nmap -sS 192.168.68.59
 ```
+![Rescan](../images/1_PortHardeningLab/5_Lab1.png)
 
 ## Port hardening of port 445 confirmed
