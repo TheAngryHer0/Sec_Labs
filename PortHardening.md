@@ -12,8 +12,7 @@ nmap -sS 192.168.68.59
 ```cmd
 nmap -sS -p- 127.0.0.1
 ```
-([Sec_Labs/images/1.Port Hardening Lab/1.port 445 lab.png](https://github.com/TheAngryHer0/Sec_Labs/blob/main/images/1.Port%20Hardening%20Lab/1.port%20445%20lab.png))
-
+![image1](../images/1.Port Hardening Lab/1.port 445 lab.png)
 
 ## Anomaly: Port still open after stopping in services.
 1. **Lookup port status**
@@ -24,6 +23,8 @@ netstat -ano | findstr :445
 ```Powershell admin
 Get-SmbServerConfiguration
 ```
+![image2](../images/1.Port Hardening Lab/3.port 445 lab.png)
+
 3. **Disable SMB1 server protocol and disable server SMB2 config**
 ```Powershell admin
 Disable-WindowsOptionFeature -online -FeatureNameSMB1Protocol
