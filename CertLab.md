@@ -15,6 +15,7 @@ openssl genrsa -out private.key 2048
 openssl req -new -x509 -key private.key -out cert.pem -days 365
 ```
 ![prompts to ask for info that will be hashed with private key](images/3_DigitalCertLab/Lab3_1.png)
+*prompts to ask for info that will be hashed with private key*
 
 3. **Install certificate for future testing uses**
 
