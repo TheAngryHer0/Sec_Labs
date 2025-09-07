@@ -12,8 +12,7 @@ nmap -sS 192.168.68.59
 ```cmd
 nmap -sS -p- 127.0.0.1
 ```
-
-![image1]([Sec_Labs/images/1.Port Hardening Lab/1.port 445 lab.png](https://github.com/TheAngryHer0/Sec_Labs/blob/main/images/1.Port%20Hardening%20Lab/1.port%20445%20lab.png))
+([Sec_Labs/images/1.Port Hardening Lab/1.port 445 lab.png](https://github.com/TheAngryHer0/Sec_Labs/blob/main/images/1.Port%20Hardening%20Lab/1.port%20445%20lab.png))
 
 
 ## Anomaly: Port still open after stopping in services.
