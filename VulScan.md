@@ -1,6 +1,5 @@
-## Vulnerability scan and mitigation
-
-Objective: to scan my own VM for vulnerabilities and ways to mitigate said vulnerabilities.
+# Vulnerability scan and mitigation
+## Objective: to scan my own VM for vulnerabilities and ways to mitigate said vulnerabilities.
 
 1. ** NMAP vulnerability scan **
 
