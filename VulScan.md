@@ -7,7 +7,7 @@
 nmap -sV --script vulners 10.0.2.15
 ```
 
-with knowledge above, I can see that there is a vulnerable port open (port 8080) with high vulnerability
+*with knowledge above, I can see that there is a vulnerable port open (port 8080) with high vulnerability*
 
 
 2. **Checking port service app**
@@ -16,7 +16,7 @@ with knowledge above, I can see that there is a vulnerable port open (port 8080)
 sudo ss -tulnp | grep 8080
 ```
 
-this gives the result that it is run by "apache2"
+*this gives the result that it is run by "apache2"*
 
 
 3. **Disabling apache2**
@@ -31,7 +31,7 @@ sudo systemctl stop apache2
 sudo apt upgrade apache2
 ```
 
-not enough space so revert to disabling service
+*not enough space so revert to disabling service*
 
 
 5. **Disable service and add defense in depth**
@@ -51,5 +51,5 @@ sudo iptables -A INPUT -p udp --dport 8080 -j DROP
 nmap -p 8080 10.0.2.15
 ```
 
-Since current status is filtered, objective achieved.
+*Since current status is filtered, objective achieved.*
 
