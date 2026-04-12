@@ -9,5 +9,5 @@ Documenting my journey
 - [Domain 3: Obfucsations methods](PortObfuscation.md)
 
 ## CBROPS Labs
-- [3.0: Host Based Analysis](SplunkBasics.md)
-- [3.0: Host Based Analysis](ElasticBasics.md)
+- [3.0: Host Based Analysis: Splunk](SplunkBasics.md)
+- [3.0: Host Based Analysis: Elastic](ElasticBasics.md)
