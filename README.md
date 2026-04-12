@@ -11,6 +11,6 @@ Documenting my journey
 ## CBROPS Labs
 - [3.0: Host Based Analysis: Splunk Basics](SplunkBasics.md)
 - [3.0: Host Based Analysis: Elastic Basics](ElasticBasics.md)
-- [4.0: Host Based Analysis: Wireshark Basics]
-- [4.0: Host Based Analysis: Phishing analysis]
-- [4.0: Host Based Analysis: Network analysis]
+- [4.0: Network Intrusion Analysis: Wireshark Basics]
+- [4.0: Network Intrusion Analysis: Phishing analysis]
+- [4.0: Network Intrusion Analysis: Network analysis]
