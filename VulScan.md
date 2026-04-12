@@ -7,6 +7,7 @@
 nmap -sV --script vulners 10.0.2.15
 ```
 ![](images/06_VulScan/vuls1.png)
+
 *with knowledge above, I can see that there is a vulnerable port open (port 8080) with high vulnerability*
 
 
@@ -16,6 +17,7 @@ nmap -sV --script vulners 10.0.2.15
 sudo ss -tulnp | grep 8080
 ```
 ![](images/06_VulScan/vuls2.png)
+
 *this gives the result that it is run by "apache2"*
 
 
@@ -32,6 +34,7 @@ sudo systemctl stop apache2
 sudo apt upgrade apache2
 ```
 ![](images/06_VulScan/vuls4.png)
+
 *not enough space so revert to disabling service*
 
 
