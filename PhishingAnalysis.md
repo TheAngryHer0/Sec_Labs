@@ -73,6 +73,7 @@ sha256sum SWT_#09674321____PDF__.CAB
 ```
 
 > *received sha256 hash of file*
+
 ![](images/10_Phishing/phish_7.png)
 
 <br>
@@ -82,5 +83,6 @@ sha256sum SWT_#09674321____PDF__.CAB
 
 
 > *shows that hash of file matches known malicious signatures*
+
 ![](images/10_Phishing/phish_8.png)
 
