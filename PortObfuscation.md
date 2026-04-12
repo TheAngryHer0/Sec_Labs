@@ -21,7 +21,7 @@ sudo nano /etc/ssh/sshd_config
 ```bash
 sudo -p 2222 julam@localhost
 ```
-![SSH connection port](images/2_PortObfuscationLab/Lab2_2.png
+![SSH connection port](images/02_PortObfuscationLab/Lab2_2.png)
 
 5. **restarting ssh to confirm validitiy**
 ```bash
