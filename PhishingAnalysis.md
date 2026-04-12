@@ -12,6 +12,7 @@
 ![](images/10_Phishing/phish_2.png)
 
 <br>
+<br>
 
 2. **notice that the email was first sent from hostwindsdns.com and later to yahoo server before arriving at user inbox**
 
@@ -19,6 +20,7 @@
 
 ![](images/10_Phishing/phish_3.png)
 
+<br>
 <br>
 
 3. **conducting whois on terminal to check for actual original org of message**
