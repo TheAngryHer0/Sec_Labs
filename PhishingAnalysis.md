@@ -11,7 +11,7 @@
 
 ![](images/10_Phishing/phish_2.png)
 
----
+<b/r>
 
 2. **notice that the email was first sent from hostwindsdns.com and later to yahoo server before arriving at user inbox**
 
@@ -19,7 +19,7 @@
 
 ![](images/10_Phishing/phish_3.png)
 
----
+<b/r>
 
 3. **conducting whois on terminal to check for actual original org of message**
 
@@ -31,7 +31,7 @@ whois 192.119.71.157
 
 *this yields Hostwinds LLC*
 
----
+<b/r>
 
 4. **checking for the spf policy entry for this mutawamarine.com**
 
@@ -43,7 +43,7 @@ dig +short mutawamarine.com txt
 
 *shows spf was configured to block sender domain*
 
----
+<b/r>
 
 5. **checking for the DMARC policy entry for this mutawamarine.com**
 
@@ -55,7 +55,7 @@ dig +short _dmarc.mutawamarine.com txt
 
 *shows dmarc was also configured to block sender domain*
 
----
+<b/r>
 
 6. **hashing phishing file attachment with sha256 for checking**
 
@@ -70,7 +70,7 @@ sha256sum SWT_#09674321____PDF__.CAB
 *received sha256 hash of file*
 ![](images/10_Phishing/phish_7.png)
 
----
+<b/r>
 
 7. **checking on virustotal to see if hash matches known malware signatures**
 
