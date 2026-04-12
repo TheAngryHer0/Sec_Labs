@@ -7,7 +7,8 @@
 
 ![](images/10_Phishing/phish_1.png)
 
-*shows that the email has failed spf, both smtp check and dmarc*
+> *shows that the email has failed spf, both smtp check and dmarc*
+
 ![](images/10_Phishing/phish_2.png)
 
 ---
