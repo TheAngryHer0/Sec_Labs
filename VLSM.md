@@ -1,5 +1,5 @@
 # Static route config basics
-## Objective to assign subnets according to host requirements and configure static routes
+## Objective: to assign subnets according to host requirements and configure static routes
 
 **details in screenshot**
 
