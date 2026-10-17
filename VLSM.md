@@ -2,6 +2,7 @@
 ## Objective to assign subnets according to host requirements and configure static routes
 
 **details in screenshot**
+
 ![](images/13_VLSM/VLSM1.png)
 
 
