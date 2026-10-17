@@ -1,5 +1,5 @@
 # Static route config basics
-## Objective to configure all devices and to set up static routes between different subnets.
+## Objective: to configure all devices and to set up static routes between different subnets.
 
 **details in screenshot**
 
