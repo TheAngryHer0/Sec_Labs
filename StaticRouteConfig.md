@@ -2,6 +2,7 @@
 ## Objective to configure all devices and to set up static routes between different subnets.
 
 **details in screenshot**
+
 ![](images/12_StaticRoutes_Config/staticroute1.png)
 
 1. **Set PC1 and PC2 default gateways to be R1 int g0/1 and R3 int g0/1**
