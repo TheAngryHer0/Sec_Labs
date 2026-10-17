@@ -3,7 +3,7 @@
 
 **details in screenshot**
 
-![](images/13_ROAS_Config/ROAS1.png)
+![](images/14_ROAS_Config/ROAS1.png)
 
 
 1. *to configure the switch interfaces as access ports we can do the following*
@@ -39,9 +39,9 @@ SW2(config-if)# int range f0/2-3
 SW2(config-if)# switchport access vlan 10
 ``
 
-![](images/13_ROAS_Config/ROAS2.png)
+![](images/14_ROAS_Config/ROAS2.png)
 
-![](images/13_ROAS_Config/ROAS3.png)
+![](images/14_ROAS_Config/ROAS3.png)
 
 
 3. *now to configure the trunk ports g0/1 of SW1 and SW2, allow necessary VLANs only and use a different port for the native VLAN*
@@ -67,9 +67,9 @@ SW1(config-if)# switchport trunk allowed vlan 10,30
 SW1(config-if)# switchport trunk native vlan 99
 ``
 
-![](images/13_ROAS_Config/ROAS4.png)
+![](images/14_ROAS_Config/ROAS4.png)
 
-![](images/13_ROAS_Config/ROAS5.png)
+![](images/14_ROAS_Config/ROAS5.png)
 
 
 4. Finally to configure R1's interface as ROAS and match the dot1q encapsulations with corresponding VLAN messages
@@ -93,11 +93,11 @@ SW2(config)# int g0/2
 SW2(config-if)# switchport mode trunk
 ``
 
-![](images/13_ROAS_Config/ROAS6.png)
+![](images/14_ROAS_Config/ROAS6.png)
 
 
 5. **resulting ping from PC3 to device in VLAN10 and VLAN20**
 
-![](images/13_ROAS_Config/ROAS7.png)
+![](images/14_ROAS_Config/ROAS7.png)
 
 *successful pings both times*
