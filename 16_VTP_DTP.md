@@ -74,7 +74,7 @@ SW2(config)# vtp mode client
 
 ![](images/16_VTP_DTP/VTP11.png)
 
-##Trying to add VLAN 50
+## Trying to add VLAN 50
 
 ![](images/16_VTP_DTP/VTP11.png)
 
