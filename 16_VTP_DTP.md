@@ -6,7 +6,7 @@
 ![](images/16_VTP_DTP/VTP01.png)
 
 
-1. *to configure the switchports connecting switches as trunkports while disabling dtp with nonegotiate for best practice*
+# 1. *to configure the switchports connecting switches as trunkports while disabling dtp with nonegotiate for best practice*
 
 ```
 SW1(config)# int g0/1
@@ -27,7 +27,7 @@ SW1(config-if)# swtichport nonegotiate
 ![](images/16_VTP_DTP/VTP05.png)
 
 
-2. *Configure SW1 in VTP domain CCNA, creating VLANs 10-30*
+# 2. *Configure SW1 in VTP domain CCNA, creating VLANs 10-30*
 
 ```
 SW1(config)# vtp domain CCNA
@@ -45,7 +45,7 @@ SW1(config)# show vlan
 ![](images/16_VTP_DTP/VTP06.png)
 
 
-3. *Checking SW2 output while also configuring SW2 in transparent mode and adding VLAN40*
+# 3. *Checking SW2 output while also configuring SW2 in transparent mode and adding VLAN40*
 
 ```
 SW2(config)# vtp domain CCNA
@@ -61,7 +61,7 @@ SW2(config)# vtp mode transparent
 *Configure SW2 is in transparent mode, so adding VLANs does not affect SW1 in server mode*
 
 
-4. *Configuring SW3 in client mode and adding checking output*
+# 4. *Configuring SW3 in client mode and adding checking output*
 
 ```
 SW2(config)# vtp domain CCNA
@@ -81,7 +81,7 @@ SW2(config)# vtp mode client
 *Adding VLAN numbers aren't allowed in client mode*
 
 
-6. *converting all host connected ports to static access ports*
+# 5. *converting all host connected ports to static access ports*
 
 ```
 SW1(config)# int range f0/1-2
