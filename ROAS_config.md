@@ -1,4 +1,4 @@
-# Static route config basics
+# ROAS config basics
 ## Objective: to configure ROAS on R1 such that VLAN traffic can be reached and Switches are properly configured with access/ trunkports
 
 **details in screenshot**
