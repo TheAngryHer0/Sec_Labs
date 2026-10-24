@@ -1,5 +1,6 @@
-# Sec_Labs
-Documenting my journey
+# List of all Labs
+Documenting my journey as someone outside the field.
+Starting with 0 experience > security engineer
 
 ---
 
