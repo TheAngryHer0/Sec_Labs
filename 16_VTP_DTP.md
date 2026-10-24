@@ -6,7 +6,7 @@
 ![](images/16_VTP_DTP/VTP01.png)
 
 
-# 1. *to configure the switchports connecting switches as trunkports while disabling dtp with nonegotiate for best practice*
+## 1. *to configure the switchports connecting switches as trunkports while disabling dtp with nonegotiate for best practice*
 
 ```
 SW1(config)# int g0/1
@@ -16,18 +16,18 @@ SW1(config-if)# swtichport nonegotiate
 
 ![](images/16_VTP_DTP/VTP02.png)
 
-## Now similarly, for SW2 and SW3
+### Now similarly, for SW2 and SW3
 
 ![](images/16_VTP_DTP/VTP03.png)
 
 ![](images/16_VTP_DTP/VTP04.png)
 
-## Confirming operational mode of SW1
+### Confirming operational mode of SW1
 
 ![](images/16_VTP_DTP/VTP05.png)
 
 
-# 2. *Configure SW1 in VTP domain CCNA, creating VLANs 10-30*
+## 2. *Configure SW1 in VTP domain CCNA, creating VLANs 10-30*
 
 ```
 SW1(config)# vtp domain CCNA
@@ -40,12 +40,12 @@ SW1(config)# show vlan
 
 ![](images/16_VTP_DTP/VTP06.png)
 
-## VLANs on SW1
+### VLANs on SW1
 
 ![](images/16_VTP_DTP/VTP06.png)
 
 
-# 3. *Checking SW2 output while also configuring SW2 in transparent mode and adding VLAN40*
+## 3. *Checking SW2 output while also configuring SW2 in transparent mode and adding VLAN40*
 
 ```
 SW2(config)# vtp domain CCNA
@@ -54,14 +54,14 @@ SW2(config)# vtp mode transparent
 
 ![](images/16_VTP_DTP/VTP09.png)
 
-## VLANs on SW2
+### VLANs on SW2
 
 ![](images/16_VTP_DTP/VTP08.png)
 
 *Configure SW2 is in transparent mode, so adding VLANs does not affect SW1 in server mode*
 
 
-# 4. *Configuring SW3 in client mode and adding checking output*
+## 4. *Configuring SW3 in client mode and adding checking output*
 
 ```
 SW2(config)# vtp domain CCNA
@@ -70,18 +70,18 @@ SW2(config)# vtp mode client
 
 ![](images/16_VTP_DTP/VTP10.png)
 
-## VLANs on SW3
+### VLANs on SW3
 
 ![](images/16_VTP_DTP/VTP11.png)
 
-## Trying to add VLAN 50
+### Trying to add VLAN 50
 
 ![](images/16_VTP_DTP/VTP11.png)
 
 *Adding VLAN numbers aren't allowed in client mode*
 
 
-# 5. *converting all host connected ports to static access ports*
+## 5. *converting all host connected ports to static access ports*
 
 ```
 SW1(config)# int range f0/1-2
@@ -104,15 +104,15 @@ SW1# show interfaces f0/1 switchport
 SW1# show vtp
 ```
 
-## SW1
+### SW1
 
 ![](images/16_VTP_DTP/VTP13.png)
 
-## SW2
+### SW2
 
 ![](images/16_VTP_DTP/VTP14.png)
 
-## SW3
+### SW3
 
 ![](images/16_VTP_DTP/VTP15.png)
 
