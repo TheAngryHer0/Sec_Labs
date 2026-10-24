@@ -41,6 +41,7 @@ SW1(config)# show vlan
 ![](images/16_VTP_DTP/VTP06.png)
 
 ## VLANs on SW1
+
 ![](images/16_VTP_DTP/VTP06.png)
 
 
@@ -54,6 +55,7 @@ SW2(config)# vtp mode transparent
 ![](images/16_VTP_DTP/VTP09.png)
 
 ## VLANs on SW2
+
 ![](images/16_VTP_DTP/VTP08.png)
 
 *Configure SW2 is in transparent mode, so adding VLANs does not affect SW1 in server mode*
@@ -69,9 +71,11 @@ SW2(config)# vtp mode client
 ![](images/16_VTP_DTP/VTP10.png)
 
 ## VLANs on SW3
+
 ![](images/16_VTP_DTP/VTP11.png)
 
 ##Trying to add VLAN 50
+
 ![](images/16_VTP_DTP/VTP11.png)
 
 *Adding VLAN numbers aren't allowed in client mode*
@@ -101,12 +105,15 @@ SW1# show vtp
 ```
 
 ## SW1
+
 ![](images/16_VTP_DTP/VTP13.png)
 
 ## SW2
+
 ![](images/16_VTP_DTP/VTP14.png)
 
 ## SW3
+
 ![](images/16_VTP_DTP/VTP15.png)
 
 
